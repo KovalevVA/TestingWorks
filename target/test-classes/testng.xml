@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name = "PurchaseAutomationSuite" verbose="10" parallel="methods">
+    <test name = "PurchaseInOnlineShopTest" >
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="http://automationpractice.com"/>
+        <parameter name="email_to_sign_in" value="mamisased@imailto.net"/>
+        <parameter name="password_to_sign_in" value="test1234"/>
+        <parameter name="item_to_buy" value="Blouses"/>
+        <packages>
+            <package name = "ui.tests.pages.tests.*"/>
+        </packages>
+    </test>
+</suite>
